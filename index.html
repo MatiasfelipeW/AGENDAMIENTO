@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de Visas Americanas</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Solicitudes de Visas Americanas para la Comunidad Latina</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Asesoría Especializada para Solicitud de Visa Americana</h2>
+            <p>Nos especializamos en ayudar a la comunidad latina a obtener sus visas americanas. Conocemos los procesos y te guiamos paso a paso para que puedas alcanzar tus sueños de viajar a los Estados Unidos.</p>
+        </section>
+        <section class="benefits">
+            <h2>¿Por Qué Elegirnos?</h2>
+            <ul>
+                <li>Asesoría personalizada y profesional en tu idioma.</li>
+                <li>Traducción y llenado de formularios DS-160.</li>
+                <li>Preparación para la entrevista consular.</li>
+                <li>Seguimiento continuo de tu proceso.</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="https://formspree.io/f/manwrnrq" method="POST"> <!-- Reemplaza {tu-form-id} por tu ID de Formspree -->
+                
+                <!-- Campo para el nombre completo -->
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <!-- Campo para el teléfono de contacto -->
+                <label for="phone">Teléfono de Contacto (con indicativo del país):</label>
+                <input type="tel" id="phone" name="phone" required pattern="[+]?[0-9]{1,4}[-\s]?[0-9]{6,12}">
+        
+                <!-- Campo para el tipo de visa requerida -->
+                <label for="visa-type">Tipo de Visa Requerida:</label>
+                <textarea id="visa-type" name="visa-type" rows="5" required placeholder="Especifica el tipo de visa que requieres..."></textarea>
+        
+                <!-- Campo oculto para redirigir a la página de agradecimiento -->
+                <input type="hidden" name="_next" value="https://matiasfelipew.github.io/Whiat/">
+                
+                <!-- Botón de envío del formulario -->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <a href="https://wa.me/573042286435" target="_blank">
+            <img src="MEDIA/USAPP.png" alt="WhatsApp" class="whatsapp-button">
+        </a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Solicitudes de Visas Americanas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
