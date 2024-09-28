@@ -241,3 +241,24 @@ footer.footer {
   }
 }
 
+
+/* Botón en el footer */
+.footer-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Color inicial del texto */
+  background-color: red; /* Color inicial del botón */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición para suavizar el cambio de color */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+.footer-button:hover {
+  background-color: white; /* Color de fondo al pasar el cursor */
+  color: red; /* Cambiar el color del texto al pasar el cursor */
+}
