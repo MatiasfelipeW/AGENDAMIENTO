@@ -196,10 +196,10 @@ footer.footer {
 /* Botón de WhatsApp flotante */
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 130px;
   left: 20px; /* Cambiado a la izquierda */
-  width: 50px; /* Tamaño ajustado */
-  height: 50px;
+  width: 250px; /* Tamaño ajustado */
+  height: 250px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -261,4 +261,25 @@ footer.footer {
 .footer-button:hover {
   background-color: white; /* Color de fondo al pasar el cursor */
   color: red; /* Cambiar el color del texto al pasar el cursor */
+}
+
+
+#google_translate_element {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000; /* Para que siempre esté por encima de otros elementos */
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
 }
